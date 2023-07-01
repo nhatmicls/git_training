@@ -9,5 +9,8 @@ int main()
     int new_1 = plus(1, 2);
     std::cout << "ANS: " << new_1 << "\n";
 
+    std::cout << "hello\n";
+    
+
     return 0;
 }
