@@ -11,6 +11,7 @@ int main()
 
     std::cout << "hello\n";
     std::cout << "PIF\n";
+    std::cout << "HCMUT\n";
 
     return 0;
 }
