@@ -10,8 +10,12 @@ int main()
     std::cout << "ANS: " << new_1 << "\n";
 
     std::cout << "hello\n";
+<<<<<<< HEAD
     std::cout << "PIF\n";
     std::cout << "HCMUT\n";
+=======
+    
+>>>>>>> parent of 65f1954 ([Micls] Add PIF)
 
     return 0;
 }
