@@ -10,7 +10,7 @@ int main()
     std::cout << "ANS: " << new_1 << "\n";
 
     std::cout << "hello\n";
-    std::cout << "Git reset --hard\n";
+    std::cout << "Git stash\n";
 
     return 0;
 }
