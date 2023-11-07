@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "make",
+			"hide": true,
+			"command": "",
+			"options": {
+				"cwd": "${workspaceFolder}/build"
+			},
+			"args": [
+				"make"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "silent",
+				"revealProblems": "onProblem",
+				"close": true,
+				"clear": true
+			},
+			"problemMatcher": "$msCompile",
+			"detail": "CMake template build task"
+		}
+	]
+}

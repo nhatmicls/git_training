@@ -5,15 +5,20 @@
 
 #include <iostream>
 
-struct __attribute__((__packed__)) my_object
+struct my_object
 {
     int32_t number_one;
     int32_t number_two;
-};
+    int32_t number_three;
+    int32_t number_four;
+} __attribute__((__packed__));
 
 struct my_object *my_object_new()
 {
-    return (struct my_object *)malloc(sizeof(struct my_object));
+    struct my_object *feed = (struct my_object *)malloc(sizeof(struct my_object));
+    feed->number_one = 10;
+    feed->number_two = 20;
+    return feed;
 };
 
 int my_object_init(struct my_object *self)

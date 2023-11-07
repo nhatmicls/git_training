@@ -6,6 +6,7 @@
 
 struct my_object;
 
+struct my_object *my_object_new();
 int my_object_init(struct my_object *self);
 int my_object_deinit(struct my_object *self);
 

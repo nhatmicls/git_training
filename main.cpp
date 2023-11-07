@@ -1,20 +1,53 @@
 #include <iostream>
-#include "lib/app/application.h"
+#include <string>
+
+using namespace std;
+
+class Solution
+{
+public:
+    int solution(int a, int b)
+    {
+        string a_in = to_string(a);
+        string b_in = to_string(b);
+
+        string s_result;
+
+        int max_length = a_in.length() > b_in.length() ? a_in.length() : b_in.length();
+
+        if (a_in.length() + b_in.length() > 9)
+        {
+            return -1;
+        }
+
+        for (int loc = 0; loc < max_length; loc++)
+        {
+            if (loc < a_in.length())
+            {
+                s_result += a_in[loc];
+            }
+
+            if (loc < b_in.length())
+            {
+                s_result += b_in[loc];
+            }
+        }
+
+        int32_t i_result = stoi(s_result);
+
+        if (i_result > 100000000)
+        {
+            return -1;
+        }
+
+        return i_result;
+    }
+};
+
+int a;
 
 int main()
 {
-    std::cout << "hi\n";
-    application *data, *data2;
-
-    std::cout << "[0] Still work in here: " << data << "\n";
-
-    application_init(data, 100, 5);
-    application_init(data2, 500, 20);
-
-    std::cout << application_get_number_one(data) << "\n";
-    std::cout << application_get_number_one(data2) << "\n";
-
-    // std::cout << my_object_size();
-
+    std::cout << a << std::endl;
     return 0;
 }

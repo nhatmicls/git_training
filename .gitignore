@@ -33,3 +33,6 @@
 
 # User gitignore
 build/
+
+
+a?1.json
